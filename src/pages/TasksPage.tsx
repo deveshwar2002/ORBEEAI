@@ -26,7 +26,7 @@ const INITIAL_TASK = {
 };
 
 const EMPLOYEES = [
-  'Parth', 'Nakshatra', 'Prem', 'Keshav', 'Pranshu', 'Rishi', 'Mohit','Harshit'
+  'Parth', 'Nakshatra', 'Prem', 'Keshav', 'Pranshu', 'Rishi', 'Mohit','Harshit','Shubham'
 ];
 
 export function TasksPage() {
