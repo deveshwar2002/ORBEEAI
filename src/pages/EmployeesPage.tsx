@@ -26,7 +26,7 @@ interface EmployeeStats {
 }
 
 const INITIAL_EMPLOYEES = [
-  'Parth', 'Nakshatra', 'Prem', 'Keshav', 'Pranshu', 'Rishi', 'Mohit'
+  'Parth', 'Nakshatra', 'Prem', 'Keshav', 'Pranshu', 'Rishi', 'Mohit','Harshit','Shubham'
 ].map(name => ({
   name,
   email: `${name.toLowerCase()}@company.com`,
