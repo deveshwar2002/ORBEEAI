@@ -4,6 +4,7 @@ import {
   Sparkles, Download, Award, Shield, Globe, 
   MessageSquare, Calendar, Users, Zap, ChevronRight 
 } from 'lucide-react';
+import { Footer } from '../components/Footer';
 
 export function LandingPage() {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ export function LandingPage() {
             <div className="flex items-center gap-2">
               <Sparkles className="h-8 w-8 text-blue-600" />
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                OrbeeAI 
+                OrbeeAI
               </span>
             </div>
             <div className="flex items-center gap-4">
@@ -57,7 +58,7 @@ export function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Simplify Organize<span className="text-blue-600">Automate</span>
+              Simplify. Organize. <span className="text-blue-600">Automate.</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Track Tasks, Coordinate Teams, and Monitor Performance - All in One Place!
@@ -132,42 +133,7 @@ export function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Sparkles className="h-6 w-6 text-blue-400" />
-                <span className="text-xl font-bold">OrbeeAI</span>
-              </div>
-              <p className="text-gray-400">
-                Simplifying work management for teams worldwide
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Contact</h3>
-              <p className="text-gray-400">24x7 Support Available</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Download</h3>
-              <div className="space-y-2">
-                <p className="text-gray-400"></p>
-                <p className="text-gray-400">Android App Coming Soon</p>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Legal</h3>
-              <div className="space-y-2">
-                <p className="text-gray-400">Privacy Policy</p>
-                <p className="text-gray-400">Terms of Service</p>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>All rights reserved @OrbeeAI By @Offerrush</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
