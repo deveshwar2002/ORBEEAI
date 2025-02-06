@@ -10,6 +10,8 @@ import { TasksPage } from './pages/TasksPage';
 import { EmployeesPage } from './pages/EmployeesPage';
 import { LandingPage } from './pages/LandingPage';
 import { PricingPage } from './pages/PricingPage';
+import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
+import { TermsPage } from './pages/TermsPage';
 
 function LoginPage() {
   return (
@@ -48,6 +50,8 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms" element={<TermsPage />} />
         <Route path="/login" element={!auth.currentUser ? <LoginPage /> : <Navigate to="/dashboard" />} />
         <Route path="/dashboard" element={
           auth.currentUser ? (
